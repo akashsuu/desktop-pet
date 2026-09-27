@@ -46,6 +46,7 @@ func _ready():
 	
 	for anim_name in animations.keys():
 		var folder = animations[anim_name]
+		var folder_path = "res://assets/" + folder
 		frames.add_animation(anim_name)
 		frames.set_animation_speed(anim_name, 4) # fps
 		
@@ -54,7 +55,7 @@ func _ready():
 		else:
 			frames.set_animation_loop(anim_name, false)
 			
-		var dir = DirAccess.open("res://assets/" + folder)
+		var dir = DirAccess.open(folder_path)
 		if dir:
 			var files = []
 			dir.list_dir_begin()
@@ -69,7 +70,7 @@ func _ready():
 			)
 			
 			for f in files:
-				var tex = load("res://assets/" + folder + "/" + f)
+				var tex = load(folder_path + "/" + f)
 				if tex:
 					frames.add_frame(anim_name, tex)
 					
@@ -286,9 +287,9 @@ func _process(delta):
 	ground_y = screen_rect.end.y - win.size.y + y_offset
 	
 	if exact_pos.y < ground_y:
-		velocity_y += 400.0 * delta #gravity
+		velocity_y += 400.0 * delta
 		if is_falling and velocity_y > 300.0:
-			velocity_y = 300.0 #terminal velocity
+			velocity_y = 300.0
 	else:
 		velocity_y = 0
 		exact_pos.y = ground_y
