@@ -24,6 +24,13 @@ A living, breathing pixel cat that roams around your Windows taskbar. Built with
 2. Press **F5** to run
 
 ---
+## Animations
+
+![Animation 1](1.png)
+![Animation 2](2.png)
+![Animation 3](3.png)
+![Animation 4](4.png)
+
 
 ## How to Add Animations
 
