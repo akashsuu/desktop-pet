@@ -31,23 +31,6 @@ A living, breathing pixel cat that roams around your Windows taskbar. Built with
 ![Animation 3](3.png)
 ![Animation 4](4.png)
 
-
-## How to Add Animations
-
-All animations live inside the `assets/` folder. Each subfolder is one animation state.
-
-1. Create a new folder inside `assets/` (e.g. `assets/MY_ANIM/`)
-2. Add your transparent `.png` frames named numerically (e.g. `1.png`, `2.png`, `3.png`)
-3. Register the animation in `pet.gd` inside the `animations` dictionary:
-   ```gdscript
-   "my_anim": "MY_ANIM"
-   ```
-4. Add your state logic to `_on_animation_finished()` or `update_behavior()`
-
-> **Tip:** All base sprites should face **left** by default. The engine automatically flips them when Kio changes direction.
-
----
-
 ## Animation States
 
 | State | Description |
@@ -64,9 +47,6 @@ All animations live inside the `assets/` folder. Each subfolder is one animation
 | `backsit` | Sitting facing backwards |
 | `stand_to_backsit` | Transition to backsit |
 | `backsit_to_stand` | Transition from backsit to stand |
-| `backshit_song` | Vibing to music (auto-detects system audio) |
-| `backshit_game` | Gaming mode (auto-detects fullscreen apps) |
-| `backsit_paw_attack` | Swats at the mouse cursor when touched |
 | `backshit_hand_lick` | Grooming animation, plays randomly while in backsit |
 | `sit_to_standup` | Transition from sit/sleep to stand |
 | `standup_to_sit` | Transition from stand to sit |
