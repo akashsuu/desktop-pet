@@ -21,15 +21,15 @@ I wanted to make something simple that could walk around my screen and just feel
 * Stays on top of other windows
 * Has different pixel animations
 
-## 📸 Screenshots
+## Screenshots
 
-![Kio screenshot 1](pv1.png)
+![Kio screenshot 1](1.png)
 
-![Kio screenshot 2](pv2.png)
+![Kio screenshot 2](2.png)
 
-![Kio screenshot 3](pv3.png)
+![Kio screenshot 3](3.png)
 
-![Kio screenshot 4](pv4.png)
+![Kio screenshot 4](4.png)
 
 ## Made with
 
