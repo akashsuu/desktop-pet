@@ -1,6 +1,6 @@
 # Kio — Desktop Pet
 
-![Kio](pv1.png)
+![Kio](6.png)
 
 [![Godot](https://img.shields.io/badge/Godot-4-478CBF?style=flat-square\&logo=godot-engine\&logoColor=white)](https://godotengine.org/)
 [![GDScript](https://img.shields.io/badge/GDScript-Godot-blue?style=flat-square\&logo=godot-engine\&logoColor=white)](https://godotengine.org/)
